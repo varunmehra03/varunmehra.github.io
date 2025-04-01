@@ -52,7 +52,7 @@ body {
 Add these lines to your package.json:
 
 ```json
-"homepage": "https://yourusername.github.io/varun-portfolio",
+"homepage": "https://yourusername.github.io/my-portfolio",
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
@@ -111,7 +111,7 @@ npm start
 ```bash
 git add .
 git commit -m "Initial portfolio website with Gemini AI chat"
-git remote add origin https://github.com/yourusername/varun-portfolio.git
+git remote add origin https://github.com/yourusername/my-portfolio.git
 git push -u origin main
 npm run deploy
 ```

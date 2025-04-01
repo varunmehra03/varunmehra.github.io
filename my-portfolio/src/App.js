@@ -126,7 +126,7 @@ const App = () => {
     };
     
     loadResumePDF();
-  }, []);
+  });
   
   // Process the extracted text from PDF
   const processResumeText = (text) => {
@@ -536,7 +536,13 @@ ${contact}
             </div>
             <div className="flex items-center">
               <FileText className="text-blue-600 h-5 w-5 mr-3" />
-              <a href="#" className="text-gray-700 hover:text-blue-700">Download Resume</a>
+              <a 
+                href="/my-portfolio/assets/varun-resume.pdf" 
+                download="Varun_Mehra_Resume.pdf" 
+                className="text-gray-700 hover:text-blue-700 hover:underline"
+              >
+                Download Resume
+              </a>
             </div>
           </div>
         </div>
