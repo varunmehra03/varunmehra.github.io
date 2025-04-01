@@ -1,2 +1,0 @@
-# Varun Mehra's Portfolio
-
