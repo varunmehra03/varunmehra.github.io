@@ -3,8 +3,9 @@ import { ArrowUp, Menu, X, Linkedin, Mail, FileText, Award, Code, Database, Clou
 import * as pdfjs from 'pdfjs-dist';
 
 // Set up PDF.js worker
-import pdfWorker from 'pdfjs-dist/build/pdf.worker.entry';
-pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@5.1.91/build/pdf.worker.min.mjs`
+
+
 
 // Test Gemini API key - replace with your actual key
 // In production, use environment variables or a secure backend
@@ -537,7 +538,7 @@ ${contact}
             <div className="flex items-center">
               <FileText className="text-blue-600 h-5 w-5 mr-3" />
               <a 
-                href="/my-portfolio/assets/varun-resume.pdf" 
+                href="/assets/varun-resume.pdf" 
                 download="Varun_Mehra_Resume.pdf" 
                 className="text-gray-700 hover:text-blue-700 hover:underline"
               >
