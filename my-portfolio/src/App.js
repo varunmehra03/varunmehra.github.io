@@ -73,7 +73,7 @@ const App = () => {
       try {
         // Note: In actual deployment, this would be the path to your PDF in the public folder
         // For testing, you might need to adjust this path
-        const pdfPath = process.env.PUBLIC_URL + '/assets/varun-resume.pdf';
+        const pdfPath = `${process.env.PUBLIC_URL}/assets/varun-resume.pdf`;
         
         console.log('Attempting to load PDF from:', pdfPath);
         
